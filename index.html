@@ -58,38 +58,50 @@
                 border-radius:3px;
                 background-color:lightgray;
             }
+            .split {
+                /* margin-left: 100px; */
+                padding: 20px;
+                display:-webkit-inline-box;
+                column-gap: 40px;
+            }
         </style>
         <script src="./dist/spaceinvaders.js"></script>
     </head>
     <body>
         <script src="./dist/spaceinvaders.js"></script>
-        <h1>Space Invaders</h1>
-        <svg id="canvas" class="svg" width="600" height="600">
-            <g id="ship" transform="translate(300,550)">
-                <polygon class="ship" points="0,-20 -4,-12 -4,4 -12,4 -12,-4 -16,4 -16,8 -12,16 -4,16 0,20 4,16 12,16 16,8 16,4 12,-4 12,4 4,4 4,-12" ></polygon>
-            </g>
-            <line id="barrier" x1="0" y1="430" x2="600" y2="430" style="stroke:cyan"></line>
-            <text id="level" class="text" x="20" y="30">Level: 1</text>
-            <text id="score" class="text" x="450" y="30">Score: 000</text>
-            <text id="lives" class="text" x="240" y="30">Lives: 1</text>
-            <text id="gameover"  class="gameover"x="140" y="300"></text>
-            <text id="gameoverSubtext" class="subtext" x="185" y="330"></text>
-        </svg>
-        <div style="float: centre">
-            <h2>Controls</h2>
-            <table>
-                <tr><td>Move Left</td><td><div id="ArrowLeft" class="key">&#8678;</div></td></tr>
-                <tr><td>Move Right</td><td><div id="ArrowRight" class="key">&#8680;</div></td></tr>
-                <tr><td>Fire</td><td><div id="Space" class="key" style="width:50px">Space</div></td></tr>
-                <tr><td>Restart Game</td><td><div id="Restart" class="key">R</div></td></tr>
-            </table>
-            <h2>How to Play</h2>
-            <p>Destroy as many invaders as you can, making sure that none of them get to your barriers!</p>
-            <p>You are given random powerups that can either give you extra lives, additional blasters, or the ability to slow down time. </p>
-            <h3></h3>
-            <h3></h3>
-            <h3></h3>
-            <h3></h3>
+        <h1 style="margin: 20px;">Space Invaders</h1>
+        <div class="split">
+            <div>
+                <svg id="canvas" class="svg" width="600" height="600">
+                    <g id="ship" transform="translate(300,550)">
+                        <polygon class="ship" points="0,-20 -4,-12 -4,4 -12,4 -12,-4 -16,4 -16,8 -12,16 -4,16 0,20 4,16 12,16 16,8 16,4 12,-4 12,4 4,4 4,-12" ></polygon>
+                    </g>
+                    <line id="barrier" x1="0" y1="430" x2="600" y2="430" style="stroke:cyan"></line>
+                    <text id="level" class="text" x="20" y="30">Level: 1</text>
+                    <text id="score" class="text" x="450" y="30">Score: 000</text>
+                    <text id="lives" class="text" x="240" y="30">Lives: 1</text>
+                    <text id="gameover"  class="gameover"x="140" y="300"></text>
+                    <text id="gameoverSubtext" class="subtext" x="185" y="330"></text>
+                </svg>
+            </div>
+            <div style="float: centre">
+                <h2>Controls</h2>
+                <table>
+                    <tr><td>Move Left</td><td><div id="ArrowLeft" class="key">&#8678;</div></td></tr>
+                    <tr><td>Move Right</td><td><div id="ArrowRight" class="key">&#8680;</div></td></tr>
+                    <tr><td>Fire</td><td><div id="Space" class="key" style="width:50px">Space</div></td></tr>
+                    <tr><td>Restart Game</td><td><div id="Restart" class="key">R</div></td></tr>
+                </table>
+                <h2>How to Play</h2>
+                <p>Destroy as many invaders as you can!</p>
+                <p>Make sure that none of them get to your barriers!</p>
+                <p>You are given random powerups that can either give you extra </p>
+                <p>lives, blasters, or the ability to slow down time. </p>
+                <h3></h3>
+                <h3></h3>
+                <h3></h3>
+                <h3></h3>
+            </div>
         </div>
     </body>
 </html>
